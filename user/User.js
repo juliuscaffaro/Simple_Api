@@ -2,9 +2,9 @@ var mongoose = require('mongoose');
 
 //Here, i`m specifying a schema for a User
 var UserSchema = new mongoose.Schema({
-    name : String,
+    nome : String,
     email : String,
-    password : String
+    foto : String
 });
 //Here, i`m attributing to the model User, the schema UserSchema
 mongoose.model('User', UserSchema);

@@ -12,9 +12,9 @@ var User = require('./User'); //because I exported the User, I can use it here
 router.post('/', function(req, res){
     console.log('Solving post');
     User.create({
-        name : req.body.name,
+        nome : req.body.nome,
         email : req.body.email,
-        password : req.body.password
+        foto : req.body.foto
     }, function(err, user){ //the user is populated with the success
         if(err) return res.status(500).send("There was an error and se vira");
         console.log(user);
